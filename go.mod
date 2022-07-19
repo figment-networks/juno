@@ -129,6 +129,6 @@ replace (
 	github.com/cosmos/cosmos-sdk => github.com/figment-networks/cosmos-sdk v0.45.1-fh
 	github.com/cosmos/iavl => github.com/cosmos/iavl v0.17.3
 	github.com/gogo/protobuf => github.com/regen-network/protobuf v1.3.3-alpha.regen.1
-	github.com/tendermint/tendermint => github.com/figment-networks/tendermint v0.34.16-fh.1
+	github.com/tendermint/tendermint => github.com/figment-networks/tendermint v0.34.16-fh.2
 	google.golang.org/grpc => google.golang.org/grpc v1.33.2
 )
