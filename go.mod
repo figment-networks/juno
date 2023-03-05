@@ -58,6 +58,8 @@ require (
 	github.com/dustin/go-humanize v1.0.1-0.20200219035652-afde56e7acac // indirect
 	github.com/dvsekhvalnov/jose2go v1.5.0 // indirect
 	github.com/felixge/httpsnoop v1.0.1 // indirect
+	github.com/figment-networks/extractor-cosmos v0.1.0 // indirect
+	github.com/figment-networks/proto-cosmos v0.1.0 // indirect
 	github.com/fsnotify/fsnotify v1.6.0 // indirect
 	github.com/go-kit/kit v0.12.0 // indirect
 	github.com/go-kit/log v0.2.1 // indirect
@@ -131,8 +133,10 @@ require (
 )
 
 replace (
+	github.com/cosmos/cosmos-sdk => github.com/graphprotocol/cosmos-sdk v0.45.12-fh
 	// use cosmos protocol buffers
 	github.com/gogo/protobuf => github.com/regen-network/protobuf v1.3.3-alpha.regen.1
+	github.com/tendermint/tendermint => github.com/graphprotocol/tendermint v0.34.24-fh
 	// use grpc compatible with cosmos protocol buffers
 	google.golang.org/grpc => google.golang.org/grpc v1.33.2
 )
