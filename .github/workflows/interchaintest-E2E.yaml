@@ -73,7 +73,7 @@ jobs:
         id: go
 
       - name: checkout chain
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - run: make ictest-basic
         env:
@@ -90,7 +90,7 @@ jobs:
         id: go
 
       - name: checkout chain
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - run: make ictest-ibc
         env:
@@ -107,7 +107,7 @@ jobs:
         id: go
 
       - name: checkout chain
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - run: make ictest-upgrade
         env:
