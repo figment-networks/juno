@@ -27,6 +27,11 @@ require (
 )
 
 require (
+	github.com/figment-networks/extractor-cosmos v0.1.0 // indirect
+	github.com/figment-networks/proto-cosmos v0.1.0 // indirect
+)
+
+require (
 	cosmossdk.io/api v0.2.6 // indirect
 	cosmossdk.io/core v0.5.1 // indirect
 	cosmossdk.io/depinject v1.0.0-alpha.3 // indirect
@@ -163,6 +168,8 @@ replace (
 	github.com/CosmWasm/token-factory => github.com/CosmosContracts/token-factory v1.2.0-juno
 	// TODO: Simapp dependency, review removing when updating to SDK with backported update https://github.com/cosmos/cosmos-sdk/issues/13423
 	github.com/btcsuite/btcd => github.com/btcsuite/btcd v0.22.2 // indirect
+	// cosmos-sdk with firehose
+	github.com/cosmos/cosmos-sdk => github.com/graphprotocol/cosmos-sdk v0.45.15-fh
 	// dgrijalva/jwt-go is deprecated and doesn't receive security updates.
 	// TODO: remove it: https://github.com/cosmos/cosmos-sdk/issues/13134
 	github.com/dgrijalva/jwt-go => github.com/golang-jwt/jwt/v4 v4.4.2
@@ -172,7 +179,8 @@ replace (
 	// use cosmos-flavored protocol buffers
 	github.com/gogo/protobuf => github.com/regen-network/protobuf v1.3.3-alpha.regen.1
 	// cometbft
-	github.com/tendermint/tendermint => github.com/skip-mev/mev-cometbft v0.34.27-mev.18
+	// github.com/tendermint/tendermint => github.com/skip-mev/mev-cometbft v0.34.27-mev.18
+	github.com/tendermint/tendermint => github.com/graphprotocol/tendermint v0.34.27-mev.18-fh
 	// use grpc version that's compatible with cosmos-flavored protocol buffers
 	google.golang.org/grpc => google.golang.org/grpc v1.33.2
 )
