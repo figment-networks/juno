@@ -27,6 +27,11 @@ require (
 )
 
 require (
+	github.com/figment-networks/extractor-cosmos v0.1.0 // indirect
+	github.com/figment-networks/proto-cosmos v0.1.0 // indirect
+)
+
+require (
 	cosmossdk.io/api v0.2.6 // indirect
 	cosmossdk.io/core v0.5.1 // indirect
 	cosmossdk.io/depinject v1.0.0-alpha.3 // indirect
@@ -172,7 +177,8 @@ replace (
 	// use cosmos-flavored protocol buffers
 	github.com/gogo/protobuf => github.com/regen-network/protobuf v1.3.3-alpha.regen.1
 	// cometbft
-	github.com/tendermint/tendermint => github.com/skip-mev/mev-cometbft v0.34.27-mev.18
+	// github.com/tendermint/tendermint => github.com/skip-mev/mev-cometbft v0.34.27-mev.18
+	github.com/tendermint/tendermint => github.com/graphprotocol/tendermint v0.34.27-mev.18-fh
 	// use grpc version that's compatible with cosmos-flavored protocol buffers
 	google.golang.org/grpc => google.golang.org/grpc v1.33.2
 )
