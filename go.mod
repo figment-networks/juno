@@ -33,10 +33,9 @@ require (
 )
 
 require (
+	github.com/figment-networks/proto-cosmos v0.1.0 // indirect
 	github.com/google/s2a-go v0.1.3 // indirect
 	github.com/graphprotocol/extractor-cosmos v0.1.1 // indirect
-	github.com/graphprotocol/proto-cosmos v0.1.2 // indirect
-	github.com/streamingfast/pbgo v0.0.6-0.20221020131607-255008258d28 // indirect
 )
 
 require (
@@ -186,7 +185,7 @@ replace (
 	github.com/99designs/keyring => github.com/cosmos/keyring v1.2.0
 
 	// Cometbft with Firehose extractor
-	github.com/cometbft/cometbft => github.com/graphprotocol/tendermint v0.37.2-fh
+	github.com/cometbft/cometbft => github.com/graphprotocol/tendermint v0.37.2-fh.0
 
 	// dgrijalva/jwt-go is deprecated and doesn't receive security updates.
 	// TODO: remove it: https://github.com/cosmos/cosmos-sdk/issues/13134
