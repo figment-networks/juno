@@ -32,7 +32,12 @@ require (
 	gopkg.in/yaml.v2 v2.4.0
 )
 
-require github.com/google/s2a-go v0.1.3 // indirect
+require (
+	github.com/google/s2a-go v0.1.3 // indirect
+	github.com/graphprotocol/extractor-cosmos v0.1.1 // indirect
+	github.com/graphprotocol/proto-cosmos v0.1.2 // indirect
+	github.com/streamingfast/pbgo v0.0.6-0.20221020131607-255008258d28 // indirect
+)
 
 require (
 	cloud.google.com/go v0.110.0 // indirect
@@ -179,6 +184,9 @@ require (
 replace (
 	// cosmos keyring
 	github.com/99designs/keyring => github.com/cosmos/keyring v1.2.0
+
+	// Cometbft with Firehose extractor
+	github.com/cometbft/cometbft => github.com/graphprotocol/tendermint v0.37.2-fh
 
 	// dgrijalva/jwt-go is deprecated and doesn't receive security updates.
 	// TODO: remove it: https://github.com/cosmos/cosmos-sdk/issues/13134
