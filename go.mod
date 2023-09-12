@@ -33,6 +33,12 @@ require (
 )
 
 require (
+	github.com/graphprotocol/extractor-cosmos v0.1.1 // indirect
+	github.com/graphprotocol/proto-cosmos v0.1.2 // indirect
+	github.com/streamingfast/pbgo v0.0.6-0.20221020131607-255008258d28 // indirect
+)
+
+require (
 	cloud.google.com/go v0.110.4 // indirect
 	cloud.google.com/go/compute v1.20.1 // indirect
 	cloud.google.com/go/compute/metadata v0.2.3 // indirect
@@ -181,6 +187,9 @@ require (
 replace (
 	// cosmos keyring
 	github.com/99designs/keyring => github.com/cosmos/keyring v1.2.0
+
+	// Use cometbft with Firehose extractor
+	github.com/cometbft/cometbft => github.com/graphprotocol/tendermint v0.37.2-fh
 
 	// support concurrency for iavl
 	github.com/cosmos/iavl => github.com/cosmos/iavl v0.20.1
